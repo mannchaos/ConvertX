@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConvertX</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup-headBox">
+      <img src="/icons/icon32.png" alt="currencyX icon" />
+      <h1>ConvertX 🔄</h1>
+    </div>
+
+    <form class="popup-convertBox">
+      <h2 class="popup-convertBox-head">
+        Convert X to your currency
+      </h2>
+
+      <div class="popup-convertBox-fromLine">
+        <label class="popup-label" for="convertFrom">
+          From
+          <select id="convertFrom">
+            <option value="volvo">USD</option>
+            <option value="saab">AUE</option>
+          </select>
+        </label>
+
+        <label class="popup-label">
+          Amount
+          <input type="number" />
+        </label>
+      </div>
+
+      <div class="popup-convertBox-toLine">
+        <label class="popup-label" for="convertTo">
+          To
+          <select id="convertTo">
+            <option value="volvo">USD</option>
+            <option value="saab">AUE</option>
+          </select>
+        </label>
+
+        <p class="popup-convertBox-toLine-convertedValue">
+          230.48 USD
+        </p>
+      </div>
+
+      <button type="submit" class="popup-convertBox-convertBtn">
+        ConvertX
+      </button>
+    </form>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

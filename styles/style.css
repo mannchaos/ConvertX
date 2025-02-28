@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --light-grey: #f9f7f7; /* Light grey */
+  --soft-blue: #dbe2ef; /* Soft Blue */
+  --medium-blue: #3f72af; /* Medium Blue */
+  --dark-blue: #112d4e; /* Dark Blue */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-blue);
+  width: 360px;
+  padding: 16px;
+}
+
+.popup {
+  width: 100%;
+}
+
+.popup-headBox {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.popup-convertBox {
+  border: 2px dashed var(--medium-blue);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.popup-convertBox-head {
+  color: var(--soft-blue);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.popup-convertBox-fromLine {
+  margin-bottom: 8px;
+}
+
+.popup-convertBox-fromLine,
+.popup-convertBox-toLine {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 72px auto;
+  gap: 16px;
+}
+
+.popup-convertBox-fromLine label,
+.popup-convertBox-toLine label {
+  display: flex;
+  flex-direction: column;
+  color: var(--soft-blue);
+  font-size: 12px;
+}
+
+.popup-convertBox-toLine-convertedValue {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--soft-blue);
+}
+
+.popup-convertBox-convertBtn {
+  margin-top: 12px;
+  width: 100%;
+  padding-block: 4px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
