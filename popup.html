@@ -15,7 +15,7 @@
       <h1>ConvertX 🔄</h1>
     </div>
 
-    <form class="popup-convertBox">
+    <form id="conversionForm" class="popup-convertBox">
       <h2 class="popup-convertBox-head">
         Convert X to your currency
       </h2>
@@ -24,14 +24,13 @@
         <label class="popup-label" for="convertFrom">
           From
           <select id="convertFrom">
-            <option value="volvo">USD</option>
-            <option value="saab">AUE</option>
+            <!-- other currency options will be fetched here -->
           </select>
         </label>
 
-        <label class="popup-label">
+        <label class="popup-label" for="enteredAmount">
           Amount
-          <input type="number" />
+          <input type="number" id="enteredAmount" />
         </label>
       </div>
 
@@ -39,12 +38,11 @@
         <label class="popup-label" for="convertTo">
           To
           <select id="convertTo">
-            <option value="volvo">USD</option>
-            <option value="saab">AUE</option>
+            <!-- other currency options will be fetched here -->
           </select>
         </label>
 
-        <p class="popup-convertBox-toLine-convertedValue">
+        <p id="convertedAmount" class="popup-convertBox-toLine-convertedValue">
           230.48 USD
         </p>
       </div>
@@ -54,7 +52,7 @@
       </button>
     </form>
   </div>
-  <script src="popup.js"></script>
+  <script src="/js/popup.js"></script>
 </body>
 
 </html>
